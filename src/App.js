@@ -1,16 +1,20 @@
-import './App.css';
 
 import {useLyricFetch} from './hooks/useLyricFetch';
+
+import Home from './components/Home';
+
+import { DefaultStyle } from './DefaultStyle';
 
 function App() {
 
   const {state} = useLyricFetch();
       
-  console.log(state)
+//  console.log(state)
   return (
-    <div>
-
-    </div>
+    <>
+    <DefaultStyle/>
+    <Home/>
+    </>
   );
 }
 
