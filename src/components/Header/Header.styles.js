@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
 flex-wrap: wrap;
 background: var(--yellow);
-position: absolute;
+position: relative;
 padding: 0rem 2rem;
 top: 0;
 left: 0;
@@ -14,8 +14,8 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1280px;
-  padding: 20px 0;
+  max-width: 1660px;
+  padding: 10px 0;
   margin: 0 auto;
 `;
 
