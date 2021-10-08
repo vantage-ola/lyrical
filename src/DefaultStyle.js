@@ -10,12 +10,12 @@ export const DefaultStyle = createGlobalStyle`
 
 	* {
 		color: var(--white);
-		
+		font-family: 'Lato', sans-serif;
+		font-weight: 700;
 	}
 
 	body {
-		font-family: 'Lato', sans-serif;
-		font-weight: 700;
+
 		color: var(--white);
 		background: var(--dark);
 		margin: 0;
