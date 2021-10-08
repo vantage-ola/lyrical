@@ -13,7 +13,7 @@ const defaultConfig = {
 }, 
 };
 
-export default {
+const API = {
 
  fetchArtistSongs: async( id, page) => {
   const endpoint = `${API_URL}artists/${id}/songs?page=${page}`;
@@ -32,3 +32,5 @@ export default {
 
  },
 };
+
+export default API;
