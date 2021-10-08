@@ -16,6 +16,7 @@ export const DefaultStyle = createGlobalStyle`
 	body {
 		font-family: 'Lato', sans-serif;
 		font-weight: 700;
+		color: var(--white);
 		background: var(--dark);
 		margin: 0;
 		padding: 0;
