@@ -1,8 +1,7 @@
 import { Footer } from "./Footer";
-import Header from "./Header";
 
 import { useLyricFetch } from "../hooks/useLyricFetch";
-import { LoadSpinner } from "./LoadSpinner/LoadSpinner.styles";
+import LoadSpinner from "./LoadSpinner";
 import Button from "./Button";
 import Grid from "./Grid";
 import SearchBar from "./SearchBar"
@@ -16,10 +15,9 @@ const Home = () => {
     return (
         <>
 
-        <Header/>
         <SearchBar/>
         {state.song ? (
-                    <Grid header='Songs'>
+                    <Grid header='Popular Songs'>
                     {state.song.map(songs => (
                         <Thumb
                         key={songs.id}

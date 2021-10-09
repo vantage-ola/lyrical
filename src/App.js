@@ -1,14 +1,24 @@
-import Home from './components/Home';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import { DefaultStyle } from './DefaultStyle';
+import Home from './components/Home';
+import Song from './components/Song';
+import Header from './components/Header';
+import NotFound from './components/NotFound';
 
 function App() {
 
   return (
-    <>
-    <DefaultStyle/>
-    <Home/>
-    </>
+    <Router>
+        <Header/>
+			<Routes>
+				<Route path='/' element ={<Home/>}/>
+				<Route path='/song/:songId' element={<Song/>}/>
+				<Route path='/*' element={<NotFound/>}/>
+			</Routes>
+      	<DefaultStyle/>
+    </Router>
   );
 }
 
