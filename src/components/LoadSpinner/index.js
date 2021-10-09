@@ -1,3 +1,3 @@
-import { LoadSpinner } from './Spinner.styles';
+import { LoadSpinner } from './LoadSpinner.styles';
 
 export default LoadSpinner;
