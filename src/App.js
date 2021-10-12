@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Song from './components/Song';
 import Header from './components/Header';
 import NotFound from './components/NotFound';
+import About from './components/About';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
 			<Routes>
 				<Route path='/' element ={<Home/>}/>
 				<Route path='/song/:songId' element={<Song/>}/>
+				<Route path='/about' element={<About/>}/>
 				<Route path='/*' element={<NotFound/>}/>
 			</Routes>
       	<DefaultStyle/>
