@@ -2,6 +2,8 @@ import React from "react";
 
 import Grid from './Grid';
 import LoadSpinner  from "./LoadSpinner";
+import BreadCrumb from "./BreadCrumb";
+import SongInfo from "./SongInfo";
 
 import { useSongFetch } from "../hooks/useSongFetch";
 import { useParams } from "../../node_modules/react-router";
@@ -16,10 +18,14 @@ const Song = () => {
 	const { state: songs, loading, error } = useSongFetch(songId);
 
 	console.log(songs)
-	
+
+	if (loading) return <LoadSpinner/>
+	if (error) return <div>Something went Wrong...</div>
+
  return (
   <>
-   Songs
+	<BreadCrumb songName={songs.title} />
+	<SongInfo songs={songs}/>
   </>
  )
 };

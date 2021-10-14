@@ -30,7 +30,6 @@ export const MenuLink = styled.a`
   padding: 0 2rem;
   cursor: pointer;
   text-align: center;
-  text-decoration: none;
   color: var(--dark);
   transition: all 0.3s ease-in;
   font-size: 0.9rem;
