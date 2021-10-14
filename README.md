@@ -20,7 +20,7 @@ npm start
 ```
 ### 4. Build the application for production:
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `build` folder.
 ```shell
 npm run build
 ```
