@@ -9,15 +9,17 @@ import Thumb from "./Thumb";
 
 const Home = () => {
 
-    const {state} = useLyricFetch();
+    const {state, loading, error} = useLyricFetch();
     console.log(state)
+    
+    if (error) return <div>Something went wrong...</div>
 
     return (
         <>
 
         <SearchBar/>
         {state.song ? (
-                    <Grid header='Popular Songs'>
+                    <Grid header='Featured Songs'>
                     {state.song.map(songs => (
                         <Thumb
                         key={songs.id}
@@ -30,9 +32,8 @@ const Home = () => {
                         /> 
                     ))}
                 </Grid>
-        ): null}
-        <Button text="Load More"/>
-        <LoadSpinner/>
+        ): null}        
+        {loading && <LoadSpinner/>}
         <Footer/>
         </>
     )

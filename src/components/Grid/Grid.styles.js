@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  max-width: var(--maxWidth);
+  max-width: 1660px;
   margin: 0 auto;
   padding: 0 20px;
 
   h1 {
-    color: var(--medGrey);
+    color: var(--white);
 
     @media screen and (max-width: 768px) {
-      font-size: var(--fontBig);
+      font-size: 1.5rem;
     }
   }
 `;

@@ -15,8 +15,8 @@ const Header = () => {
 			<Menu>
 				<Link to='/about'>
 					<MenuLink>About</MenuLink>
-				</Link>				
-				<MenuLink>Genius</MenuLink>
+				</Link>
+					<MenuLink href="https://genius.com/"  target="_blank">Genius</MenuLink>
 			</Menu>
 
 			</Content>
