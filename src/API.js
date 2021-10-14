@@ -16,7 +16,7 @@ const defaultConfig = {
 const API = {
 
  fetchArtistSongs: async( id, page) => {
-  const endpoint = `${API_URL}artists/${id}/songs?sort=popularity&page=${page}&per_page=50`;
+  const endpoint = `${API_URL}artists/${id}/songs?sort=popularity&page=${page}&per_page=48`;
   return await (await fetch(endpoint, {...defaultConfig})).json();
  },
 
