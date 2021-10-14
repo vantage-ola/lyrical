@@ -11,12 +11,13 @@ export const useSongFetch = songId => {
 	const [loading, setLoading] = useState(true);
 	
 	const fetchSongs =  useCallback(async() => {
+
 		try {
 			setError(false);
 			setLoading(true);
 
 			const songs = await API.fetchSongs(songId);
-			setState(songs);
+			setState( songs.response.song);
 
 
 		} catch (error) {
