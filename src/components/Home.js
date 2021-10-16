@@ -9,7 +9,7 @@ import Thumb from "./Thumb";
 
 const Home = () => {
 
-    const {state, loading, error} = useLyricFetch();
+    const {state, loading, searchTerm, setSearchTerm, error} = useLyricFetch();
     console.log(state)
     
     if (error) return <div>Something went wrong...</div>
@@ -17,7 +17,7 @@ const Home = () => {
     return (
         <>
 
-        <SearchBar/>
+        <SearchBar setSearchTerm={setSearchTerm}/>
         {state.song ? (
                     <Grid header='Featured Songs'>
                     {state.song.map(songs => (
@@ -32,7 +32,23 @@ const Home = () => {
                         /> 
                     ))}
                 </Grid>
-        ): null}        
+        ): null}
+        {state.search ? (
+                    <Grid header={ searchTerm }>
+
+                    {state.search.map(result => (
+                        <Thumb
+                        key={result.result.id}
+                        clickable
+                        image ={
+                            result.result.header_image_url
+                        }
+                        title ={result.result.title}
+                        songId={result.result.id}
+                        /> 
+                    ))}
+                </Grid>
+        ): null}       
         {loading && <LoadSpinner/>}
         <Footer/>
         </>
