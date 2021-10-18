@@ -12,13 +12,18 @@ Name your branch based on the feature you are working on. For example, Writing R
 ```shell
 git checkout -b <your branch name>
 ```
-### 3. Start the application:
+### 3. Create local environment ```.env```:
+Create .env file in root directory. Get your Genius API key here [https://rapidapi.com/brianiswu/api/genius/](https://rapidapi.com/brianiswu/api/genius/) and place it in this variable.
+```
+REACT_APP_API_KEY=[GENIUS_API_KEY]
+```
+### 4. Start the application:
 Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ```shell
 npm start
 ```
-### 4. Build the application for production:
+### 5. Build the application for production:
 
 Builds the app for production to the `build` folder.
 ```shell
