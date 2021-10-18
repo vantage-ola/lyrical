@@ -21,7 +21,7 @@ const SongInfo = ({songs}) => {
 			<h1>{songs.full_title}</h1>
 			<h3>LYRICS</h3>
 
-			<div id={id} class='rg_embed_link' data-song-id={songs.id}>Read <a href={url}>{songs.title}</a> lyrics on Genius</div> <script crossorigin src={embed}></script>
+			<div id={id} class='rg_embed_link' data-song-id={songs.id}>Read <a href={url} target="_blank" >{songs.title}</a> lyrics on Genius</div> <script crossorigin src={embed}></script>
 			
 			<div class="stats">
 				<div class="release-date">

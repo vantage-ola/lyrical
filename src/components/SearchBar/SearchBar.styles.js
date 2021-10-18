@@ -37,6 +37,10 @@ export const Content = styled.div`
     height: 40px;
     color: white;
     
+    @media screen and (max-width: 500px) {
+      font-size: 16px;
+    }
+    
 
     :focus {
       outline: none;

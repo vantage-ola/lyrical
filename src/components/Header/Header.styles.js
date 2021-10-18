@@ -38,7 +38,7 @@ export const MenuLink = styled.a`
     opacity: 0.5;
   }
   @media screen and (max-width: 500px) {
-   padding: 0 0.5rem;
+   padding: 0.1rem 0.7rem 0.1rem;
   }
 `;
 
