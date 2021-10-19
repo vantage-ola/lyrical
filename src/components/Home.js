@@ -10,7 +10,6 @@ import Thumb from "./Thumb";
 const Home = () => {
 
     const {state, loading, searchTerm, setSearchTerm, error} = useLyricFetch();
-    console.log(state)
     
     if (error) return <div>Something went wrong...</div>
 
