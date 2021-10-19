@@ -18,7 +18,6 @@ const Song = () => {
 
 	const { state: songs, loading, error } = useSongFetch(songId);
 
-	console.log(songs)
 
 	if (loading) return <LoadSpinner/>
 	if (error) return <div>Something went Wrong...</div>
