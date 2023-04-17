@@ -1,10 +1,9 @@
 import React from "react";
 
-import Grid from './Grid';
 import LoadSpinner  from "./LoadSpinner";
 import BreadCrumb from "./BreadCrumb";
 import SongInfo from "./SongInfo";
-import Artists from "./Artists";
+
 
 import { useSongFetch } from "../hooks/useSongFetch";
 import { useParams } from "../../node_modules/react-router";

@@ -2,9 +2,6 @@ import { useState, useEffect } from 'react';
 
 import API from '../API';
 
-//Test Data
-import Test from '../test/Test';
-
 const initialState = {
 	response: [],
 	next_page: 0

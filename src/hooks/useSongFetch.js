@@ -2,8 +2,6 @@ import { useState, useEffect, useCallback } from "react";
 
 import API from "../API";
 
-import testSong from '../test/testSong'
-
 export const useSongFetch = songId => {
 
 	const [state, setState] = useState({});

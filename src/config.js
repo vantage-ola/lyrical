@@ -1,9 +1,10 @@
 // Configuration for Genius API
-// https://rapidapi.com/brianiswu/api/genius/
-const API_URL = 'https://genius.p.rapidapi.com/';
+// https://docs.genius.com/
+
+const API_URL = 'https://api.genius.com/';
 const API_KEY = `${process.env.REACT_APP_API_KEY}`;
 
-
+// console.log(API_KEY)
 const API_SEARCH_URL = `${API_URL}search`
 
 export {

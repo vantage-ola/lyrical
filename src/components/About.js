@@ -2,7 +2,6 @@ import React from "react";
 
 import styled from "styled-components";
 
-import {Footer} from './Footer'
 
 export const Wrapper = styled.div`
   max-width: 1660px;
