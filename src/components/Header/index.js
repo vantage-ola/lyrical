@@ -13,10 +13,7 @@ const Header = () => {
 				<LogoImg src={img} alt="lyrical-logo"/>
 				</Link>	
 			<Menu>
-				<Link to='/about'>
-					<MenuLink>About</MenuLink>
-				</Link>
-					<MenuLink href="https://genius.com/"  target="_blank">Genius</MenuLink>
+				<MenuLink href="https://genius.com/"  target="_blank">Genius</MenuLink>
 			</Menu>
 
 			</Content>
