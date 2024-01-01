@@ -59,14 +59,14 @@ export const useLyricFetch = () => {
 
 	useEffect(() => {
 		setState(initialState);
-		fetchArtistSongs(2300, page);
+	//	fetchArtistSongs(2300, page);
 	}, [page]);
 
 	useEffect(() => {
 		fetchSearch(searchTerm);
 		
 		if (!searchTerm) {
-			fetchArtistSongs(2300, page);
+		//	fetchArtistSongs(2300, page);
 		}
 	}, [searchTerm, page])
 

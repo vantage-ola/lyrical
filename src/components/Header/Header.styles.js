@@ -33,6 +33,7 @@ export const MenuLink = styled.a`
   color: var(--dark);
   transition: all 0.3s ease-in;
   font-size: 0.9rem;
+  text-decoration: none;
 
   &:hover {
     opacity: 0.5;
