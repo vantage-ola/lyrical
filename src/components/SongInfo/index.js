@@ -4,6 +4,7 @@ import Thumb from "../Thumb";
 
 import { Wrapper, Content, Text } from "./SongInfo.styles";
 
+import Lyric from "../Lyric";
 
 const SongInfo = ({songs}) => { 
 	const id = `rg_embed_link_${songs.id}`
@@ -21,8 +22,8 @@ const SongInfo = ({songs}) => {
 			<h1>{songs.full_title}</h1>
 			<h3>LYRICS</h3>
 
-			<div id={id} class='rg_embed_link' data-song-id={songs.id}>Read <a href={url} target="_blank" >{songs.title}</a> lyrics on Genius</div> <script crossorigin src={embed}></script>
-			
+			{/* <div id={id} class='rg_embed_link' data-song-id={songs.id}>Read <a href={url} target="_blank" >{songs.title}</a> lyrics on Genius</div> <script crossorigin src={embed}></script>*/}
+			<Lyric link={songs.url}/>
 			<div class="stats">
 				<div class="release-date">
 					<h3>RELEASE DATE</h3>
