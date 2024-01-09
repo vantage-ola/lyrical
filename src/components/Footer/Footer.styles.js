@@ -13,3 +13,7 @@ export const Wrapper = styled.footer`
     }
 
 `
+export const A = styled.a`
+    text-decoration: none;
+    color: var(--yellow);
+`
