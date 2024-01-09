@@ -5,13 +5,12 @@ import LoadSpinner from "./LoadSpinner";
 import Grid from "./Grid";
 import SearchBar from "./SearchBar"
 import Thumb from "./Thumb";
-
+import Error from "./Error";
 const Home = () => {
 
     const {state, loading, searchTerm, setSearchTerm, error} = useLyricFetch();
     
-    if (error) return <div>Something went wrong...</div>
-
+    if (error) return <Error/>
     return (
         <>
 

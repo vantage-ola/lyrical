@@ -6,7 +6,7 @@ import SongInfo from "./SongInfo";
 
 
 import { useSongFetch } from "../hooks/useSongFetch";
-import { useParams } from "../../node_modules/react-router";
+import { useParams } from "react-router";
 //no img found png
 //
 
