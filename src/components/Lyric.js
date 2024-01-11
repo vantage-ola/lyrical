@@ -11,7 +11,7 @@ const Lyric = ({ link }) => {
     const fetchData = async () => {
         
       try {
-        const proxyUrl = 'https://thingproxy.freeboard.io/fetch/'; // proxy url
+        const proxyUrl = 'https://corsproxy.io/?'; // proxy url
         const response = await axios.get(`${proxyUrl}${link}`);
         const data = response.data;
 
