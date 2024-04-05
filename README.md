@@ -49,5 +49,5 @@ Contributions and feedback are welcome! Feel free to fork the repository, open i
 
 I hope you enjoy exploring lyrics with Lyrical. Happy coding!
 
-🚀 <a href="www.lyrical.vantageola.com.ng">Check out Lyrical out</a> 
+🚀 <a href="https://lyrical.vantageola.com.ng" target="_blank"> Check out Lyrical! <a/> 
 
